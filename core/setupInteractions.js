@@ -1,6 +1,6 @@
 // core/setupInteractions.js
 const { Events } = require("discord.js");
-const handleQueue = require("../handlers/queuehandler");
+const handleQueue = require("../handlers/queueHandler");
 const handleText = require("../handlers/texthandler");
 const handleCorrections = require("../handlers/correctionshandler");
 
