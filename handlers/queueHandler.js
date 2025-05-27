@@ -5,22 +5,25 @@ const queue = [];
 
 module.exports = {
 startQueue: async (interaction) => {
-queue.length = 0;
-await interaction.reply({
-embeds: [
-new EmbedBuilder()
-.setTitle("🧑‍🤝‍🧑 Practice Queue")
-.setDescription("No one is in the queue yet. Click below to join!")
-.setColor("Blue")
-],
-components: [
-new ActionRowBuilder().addComponents(
-new ButtonBuilder().setCustomId("join").setLabel("Join").setStyle(ButtonStyle.Success),
-new ButtonBuilder().setCustomId("leave").setLabel("Leave").setStyle(ButtonStyle.Danger),
-new ButtonBuilder().setCustomId("instructions").setLabel("Instructions").setStyle(ButtonStyle.Primary)
-)
-]
-});
+  queue.length = 0;
+
+  await interaction.deferReply(); // <- Diz ao Discord que vamos responder em breve
+
+  await interaction.editReply({   // <- Aqui vai a resposta real
+    embeds: [
+      new EmbedBuilder()
+        .setTitle("🧑‍🤝‍🧑 Practice Queue")
+        .setDescription("No one is in the queue yet. Click below to join!")
+        .setColor("Blue")
+    ],
+    components: [
+      new ActionRowBuilder().addComponents(
+        new ButtonBuilder().setCustomId("join").setLabel("Join").setStyle(ButtonStyle.Success),
+        new ButtonBuilder().setCustomId("leave").setLabel("Leave").setStyle(ButtonStyle.Danger),
+        new ButtonBuilder().setCustomId("instructions").setLabel("Instructions").setStyle(ButtonStyle.Primary)
+      )
+    ]
+  });
 },
 
 handleButtons: async (interaction) => {
