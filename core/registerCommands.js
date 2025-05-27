@@ -1,14 +1,14 @@
 // registerCommands.js → registra os comandos do bot com a API do Discord
-/core/setupInteractions.js → registra todos os listeners de interação
+// /core/setupInteractions.js → registra todos os listeners de interação
 
-/handlers/queueHandler.js → lógica para fila: join, leave, passar turno
-/handlers/textHandler.js → lógica para sortear textos por idioma ou enviar personalizado
-/handlers/correctionsHandler.js → lógica de sugestões de correção e exibição
+// /handlers/queueHandler.js → lógica para fila: join, leave, passar turno
+// /handlers/textHandler.js → lógica para sortear textos por idioma ou enviar personalizado
+// /handlers/correctionsHandler.js → lógica de sugestões de correção e exibição
 
-/components/embedFactory.js → funções utilitárias para gerar Embeds com padrão visual
-/components/buttonFactory.js → funções para montar botões interativos por contexto
+// /components/embedFactory.js → funções utilitárias para gerar Embeds com padrão visual
+// /components/buttonFactory.js → funções para montar botões interativos por contexto
 
-/utils_sheets.js → função getTextsByLanguage() (mantido como está)
+// /utils_sheets.js → função getTextsByLanguage() (mantido como está)
 */
 
 // core/registerCommands.js
