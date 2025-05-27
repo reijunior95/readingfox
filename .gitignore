@@ -1,0 +1,22 @@
+# Ambiente
+.env
+.env.local
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# IDEs / Editores
+.vscode/
+.idea/
+.DS_Store
+
+# Arquivos temporários
+*.log
+*.tmp
+
+# Sistemas
+Thumbs.db
