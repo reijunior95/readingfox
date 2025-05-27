@@ -9,7 +9,6 @@
 // /components/buttonFactory.js → funções para montar botões interativos por contexto
 
 // /utils_sheets.js → função getTextsByLanguage() (mantido como está)
-*/
 
 // core/registerCommands.js
 const { REST, Routes, SlashCommandBuilder } = require("discord.js");
