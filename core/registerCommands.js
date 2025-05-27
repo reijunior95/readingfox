@@ -1,4 +1,4 @@
-/core/registerCommands.js → registra os comandos do bot com a API do Discord
+// registerCommands.js → registra os comandos do bot com a API do Discord
 /core/setupInteractions.js → registra todos os listeners de interação
 
 /handlers/queueHandler.js → lógica para fila: join, leave, passar turno
