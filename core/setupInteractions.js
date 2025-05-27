@@ -1,8 +1,8 @@
 // core/setupInteractions.js
 const { Events } = require("discord.js");
-const handleQueue = require("../handlers/queueHandler");
-const handleText = require("../handlers/textHandler");
-const handleCorrections = require("../handlers/correctionsHandler");
+const handleQueue = require("../handlers/queuehandler");
+const handleText = require("../handlers/texthandler");
+const handleCorrections = require("../handlers/correctionshandler");
 
 module.exports = function setupInteractions(client) {
 client.on(Events.InteractionCreate, async (interaction) => {
