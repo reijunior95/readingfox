@@ -28,7 +28,7 @@ const userId = interaction.user.id;
 if (interaction.customId === "join") {
 if (!queue.includes(userId)) queue.push(userId);
 await interaction.channel.send({
-content: ✅ <@${userId}> joined the queue! Choose your language or submit your own text.
+content: `✅ <@${userId}> joined the queue! Choose your language or submit your own text.`
 });
 await interaction.deferUpdate();
 }
