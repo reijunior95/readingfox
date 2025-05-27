@@ -14,7 +14,8 @@ registerCommands();
 setupInteractions(client);
 
 client.once("ready", () => {
-console.log(✅ Bot logged in as ${client.user.tag});
+console.log(`✅ Bot logged in as ${client.user.tag}`);
+
 });
 
 client.login(process.env.BOT_TOKEN);
